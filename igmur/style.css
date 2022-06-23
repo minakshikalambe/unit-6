@@ -1,0 +1,69 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.nav-container{
+    height: 400px;
+    background-image: url("https://s.imgur.com/desktop-assets/desktop-assets/homebg.e52b5cdf24f83bcd55f9f1318855f2ef.png");
+}
+.navbar {
+    height: 60px;
+    padding: 10px;
+    display: flex;
+    text-align: center;
+    margin: 0 auto;
+    align-items: center;
+}
+.navbar-left{
+    display: inline-flex;
+    min-width: 360px;
+}
+.post-btn{
+    background-color: #1BB76E;
+    height: 40px;
+    color: white;
+    width: 120px;
+   text-decoration: none;
+   margin: 0 20px;
+}
+#input{
+    height: 30px;
+    width: 450px;
+}
+#post{
+    padding-top:6px ;
+    vertical-align: middle;
+}
+.navbar-center{
+    max-width: 550px;
+    margin: auto;
+    align-items: center;
+    flex: 1;
+    justify-content: space-around;
+    position: absolute;
+    left :450px;
+}
+.navbar-right{
+    justify-content: flex-end;
+    min-width: 280px;
+    display: inline-flex;
+    position: absolute;
+    left: 1000px;
+}
+button{
+    height: 30px;
+    padding: 5px;
+    text-align: center;
+    margin: 0 8px;
+}
+.tag{
+   text-align: center;
+    color: lightblue;
+}
+.content{
+    width: 98%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 5px;
+}

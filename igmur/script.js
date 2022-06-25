@@ -61,13 +61,13 @@ async function main() {
   }
 
 
-  function bounceBack(func, delay) {
+  function bounceBack(main, 1000) {
       document.querySelector(".content").innerHTML=""
       page=1;
     if (timerId) {
       clearTimeout(timerId);
     }
     setTimeout(function () {
-      func();
-    }, delay);
+      main();
+    }, 1000);
   }

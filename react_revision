@@ -1,0 +1,78 @@
+Explain redux to a 5 year old (ELI5) ?
+->Redux Store ( Bank )
+The money bank kept is in the vault. 
+The analogy of money is related to the state of the application. 
+You can add more money or get some money out of the bank, 
+similarly, the state can be updated with a new value or you can reduce the value inside of a state.
+money = state
+
+Now consider the whole bank, it has the cashiers, computers, and all other stuff to make it operational. For the state to work properly, we have something called the store, which is like a bank in our case.
+
+bank = store
+
+The store holds the state and keeps it safe.
+In simple language, the application state is stored in a single object managed by the Redux store.
+Actions
+Action in the real world can be defined as a process of doing something.
+ So in order to update anything in your state, we need to act on something.
+ In our bank example, we need to act by talking to a cashier and ask them to release our money.
+Reducer ( cashier ):
+As we discussed that there is no possible way of getting money directly from the bank and we have to talk to the cashier to get our money. In our case, the cashier is the reducer. It will go to the vault and get the money. The whole process is called dispatching an action.
+
+Reducer ( cashier ) has the knowledge of how to update the state ( get the money ) and ensure states get updated ( you get the money ). Reducers will always return to the new state.
+Redux principle
+To specify how the state tree is transformed, you write pure reducers.
+
+To understand that, to update the state of your application (like you do with setState updater function in React) your actions must always be sent off (dispatched) to the reducers to get your new state.
+
+In the future lesson, we will see how Redux works in full detail.
+
+What is immutability?
+->Immutable.js allows us to detect changes in JavaScript objects/arrays without resorting to the inefficiencies of deep equality checks, 
+which in turn allows React to avoid expensive re-render operations when they are not required. This means Immutable.
+
+What does Object.freeze() do?
+-> A frozen object can no longer be changed; freezing an object prevents 
+new properties from being added to it, existing properties from being removed, 
+prevents changing the enumerability, configurability, or writability of existing properties, 
+and prevents the values of existing properties from being changed. 
+
+Why is immutability required by Redux?
+->Immutability can bring increased performance to your app, 
+and leads to simpler programming and debugging, 
+as data that never changes is easier to reason about than data that is free to be changed arbitrarily throughout your app.
+
+How does Redux use shallow equality checking?
+creates a reference to the current state slice referred to by each key;
+calls the appropriate reducer and passes it the slice;
+creates a reference to the possibly-mutated state slice that's returned by the reducer.
+
+How well does Redux “scale” in terms of performance and architecture?
+->Context API is a functionality provided in React to share data across the application without having to pass through props. 
+It is like a Global value which can be accessed anywhere through the application component tree. 
+It is not recommended to be used for frequently changing data and more useful for site level settings like Language, theme etc.
+Redux is a state management container which can be used along with any application (React, angular etc.) to handle all the application related data.
+ All changes to the data happen through reducers and all data is maintained in global store. 
+So we have more control over the data and the changes and easy to access the data at any place in the application just by connecting to the store.
+
+What is webpack ?
+->The Webpack is defined as a module blunder and also helps to bundle the modules and have different task runner. 
+All assets and files are considered as modules and have one dependency graph in it. 
+The dependency graph is used to relate the modules with each other taking help from references between files.
+ It is used to traverse the modules so that the dependency graph can be created so that one single bundle can be built. 
+The programming language used for this purpose is JavaScript.
+
+What is treeshaking ?
+->
+Tree shaking is a term commonly used within a JavaScript context to describe the removal of dead code.
+
+It relies on the import and export statements in ES2015 to detect if code modules are exported and imported for use between JavaScript files.
+
+In modern JavaScript applications, we use module bundlers (e.g., webpack or Rollup) to automatically remove dead code when bundling multiple JavaScript files into single files. 
+This is important for preparing code that is production ready, for example with clean structures and minimal file size.
+
+What are some features of using webpack?
+->having all js bundled together into one file - which gives us a better performance on production deployment.
+simpler imports of npm dependencies. The bundler-free approach works but feels a bit hacky and it's more hassle to maintain.
+build-in code optimization applied automatically by webpack
+it opens doors for many futures improvements - transpiling code so we can use new language features while supporting older browsers; including styles directly from the app or moving our code base to typescript.

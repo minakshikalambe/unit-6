@@ -57,3 +57,7 @@ What is the difference between setTimeout and setInterval?
 starting after the interval of time, then repeating continuously at that interval.
 
 How can you make a network request with http module from the backend?
+ 
+ What is V8?
+ V8 is the name of the JavaScript engine that powers Google Chrome. It's the thing that takes our JavaScript and executes it while browsing with Chrome.
+V8 is the JavaScript engine i.e. it parses and executes JavaScript code. The DOM, and the other Web Platform APIs (they all makeup runtime environment) are provided by the browser.

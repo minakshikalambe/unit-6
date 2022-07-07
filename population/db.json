@@ -1,0 +1,29 @@
+{
+    "population":[
+        {"id":"1",
+            "country":"India",
+            "city":"Delhi",
+            "population1":"19,000,000"
+        },
+        {"id":"2",
+            "country":"India",
+            "city":"Calcutta",
+            "population1":"11,000,000"
+        },
+        {"id":"3",
+            "country":"India",
+            "city":"Patna",
+            "population1":"13,000,000"
+        },
+        {"id":"4",
+            "country":"India",
+            "city":"Partshinga",
+            "population1":"12,000,000"
+        },
+        {"id":"5",
+            "country":"India",
+            "city":"Nagpur",
+            "population1":"20,000,000"
+        }
+    ]
+}

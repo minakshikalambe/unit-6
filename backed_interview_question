@@ -1,0 +1,82 @@
+What is Caching?
+->Cache is a type of memory that is used to increase the speed of data access. 
+Normally, the data required for any process resides in the main memory. 
+However, it is transferred to the cache memory temporarily if it is used frequently enough. 
+The process of storing and accessing data from a cache is known as caching.
+
+How can you save money with Caching?
+->Cache memory is faster than main memory as it is located on the processor chip itself. 
+Its speed is comparable to the processor registers and so frequently required data is stored in the cache memory.
+The memory access time is considerably less for cache memory as it is quite fast. 
+This leads to faster execution of any process.
+The cache memory can store data temporarily as long as it is frequently required. 
+After the use of any data has ended, it can be removed from the cache and replaced by new data from the main memory.
+
+What is load balancing?
+->In computing, load balancing refers to the process of distributing a set of tasks over a set of resources (computing units), 
+with the aim of making their overall processing more efficient. Load balancing can optimize the response time and 
+avoid unevenly overloading some compute nodes while other compute nodes are left idle.
+
+What is CAP Theorem?
+->The CAP theorem, originally introduced as the CAP principle, can be used to explain some of the competing requirements in a distributed system with replication. 
+It is a tool used to make system designers aware of the trade-offs while designing networked shared-data systems.
+
+What is PACELC Theorem?
+->The PACELC theorem is an extension to the CAP theorem. Both theorems were developed to provide a framework for comparing distributed systems. 
+Like the CAP theorem, the PACELC theorem states that in case of network partitioning (P) in a distributed computer system, one has to choose between availability (A) and consistency (C). 
+PACELC extends the CAP theorem by introducing latency and consistency as additional attributes of distributed systems. The theorem states that, “else (E), 
+even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).” 
+
+What is PACELC Theorem?
+->The PACELC theorem is an extension to the CAP theorem.
+ Both theorems were developed to provide a framework for comparing distributed systems.
+ Like the CAP theorem, the PACELC theorem states that in case of network partitioning (P) in a distributed computer system, 
+one has to choose between availability (A) and consistency (C). 
+PACELC extends the CAP theorem by introducing latency and consistency as additional attributes of distributed systems. 
+The theorem states that, “else (E), even when the system is running normally in the absence of partitions, one has to choose between latency (L) and consistency (C).”
+
+What is Eventual Consistency?
+->Eventual Consistency is a guarantee that when an update is made in a distributed database, 
+that update will eventually be reflected in all nodes that store the data, 
+resulting in the same response every time the data is queried.
+
+What is Strong Consistency?
+->Strong Consistency simply means the data must be strongly consistent at all times.
+ All the server nodes across the world should contain the same value as an entity at any point in time.
+ And the only way to implement this behavior is by locking down the nodes when being updated.
+
+What are the different types of databases?
+->Centralised database.
+Distributed database.
+Personal database.
+End-user database.
+Commercial database.
+NoSQL database.
+Operational database.
+Relational database.
+Cloud database.
+Object-oriented database.
+Graph database.
+
+What are message queues?
+->A message queue is a form of asynchronous service-to-service communication used in serverless and microservices architectures. 
+Messages are stored on the queue until they are processed and deleted. 
+Each message is processed only once, by a single consumer.
+ Message queues can be used to decouple heavyweight processing, to buffer or batch work, and to smooth spiky workloads.
+
+Which service by Amazon Web Services (AWS) can you use for Queues?
+->Amazon Simple Queue Service (SQS) is a fully managed message queuing service that enables you to decouple and scale microservices, distributed systems, and serverless applications.
+
+What is Pub Sub ?
+-> Publish/subscribe messaging, or pub/sub messaging, is a form of asynchronous service-to-service communication used 
+in serverless and microservices architectures. In a pub/sub model, any message published to a topic is immediately 
+received by all of the subscribers to the topic. Pub/sub messaging can be used to enable event-driven architectures, 
+or to decouple applications in order to increase performance, reliability and scalability.
+
+What are webhooks?
+->A webhook in web development is a method of augmenting or altering the behavior of a web page or web application with custom callbacks. 
+These callbacks may be maintained, modified, and managed by third-party users and developers who may not necessarily be affiliated with the originating website or application.
+
+What is Docker? Why do we use it?
+->Docker is an open source containerization platform. It enables developers to package applications into containers—standardized executable components combining 
+application source code with the operating system (OS) libraries and dependencies required to run that code in any environment.

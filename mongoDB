@@ -1,0 +1,98 @@
+What are SQL Databases?
+->SQL stands for Structured Query Language
+SQL lets you access and manipulate databases
+SQL became a standard of the American National Standards Institute (ANSI) in 1986, and of the International Organization for Standardization (ISO) in 1987
+
+What are some companies that use Mongo, what type of applications are these?
+->eBay
+MetLife
+Shutterfly
+Aadhar
+EA
+MongoDB is one of the newest competitors in the field of Data Storage. Still, it has become very popular with its document-oriented NoSQL Features, 
+Map Reduce calculation capability, and distributed key-value store. It has got the title of “Database Management System of the Year” by DB-Engine. 
+It is one of the necessary languages full stack developers need to work with.
+
+What are NoSQL Databases?
+->NoSQL databases (aka "not only SQL") are non-tabular databases and store data differently than relational tables. 
+NoSQL databases come in a variety of types based on their data model. The main types are document, key-value, wide-column, and graph. 
+They provide flexible schemas and scale easily with large amounts of data and high user loads.
+
+What is the difference between SQL and NoSQL databases?
+SQL	                                                                                           NoSQL
+RELATIONAL DATABASE MANAGEMENT SYSTEM (RDBMS)	                                         Non-relational or distributed database system.
+These databases have fixed or static or predefined schema	                           They have dynamic schema
+These databases are not suited for hierarchical data storage.	                These databases are best suited for hierarchical data storage.
+These databases are best suited for complex queries	                         These databases are not so good for complex queries
+Vertically Scalable	                                                          Horizontally scalable
+Follows ACID property	                                                   Follows CAP(consistency, availability, partition tolerance)
+Examples: MySQL, PostgreSQL, Oracle, MS-SQL Server etc	                    Examples: MongoDB, GraphQL, HBase, Neo4j, Cassandra etc
+
+What are some features of MongoDB?
+->Document Oriented: In MongoDB, all the data stored in the documents instead of tables like in RDBMS. In these documents, 
+the data is stored in fields(key-value pair) instead of rows and columns which make the data much more flexible in comparison to RDBMS. 
+And each document contains its unique object id.
+
+Indexing: In MongoDB database, every field in the documents is indexed with primary and secondary indices this makes easier and takes less time to get or 
+search data from the pool of the data. If the data is not indexed, then database search each document with the specified query which takes lots of time 
+and not so efficient.
+
+Replication: MongoDB provides high availability and redundancy with the help of replication, it creates multiple copies of the data and sends 
+these copies to a different server so that if one server fails, then the data is retrieved from another server.
+
+What are aggregate queries?
+->An aggregate query is a method of deriving group and subgroup data by analysis of a set of individual data entries.  
+The term is frequently used by database developers and database administrators.
+
+What are pipelines in aggregation?
+->An aggregation pipeline consists of one or more stages that process documents:
+Each stage performs an operation on the input documents. For example, a stage can filter documents, group documents, and calculate values.
+The documents that are output from a stage are passed to the next stage.
+An aggregation pipeline can return results for groups of documents. For example, return the total, average, maximum, and minimum values.
+
+How do you do aggregate queries?
+->An aggregate query is a method of deriving group and subgroup data by analysis of a set of individual data entries.  
+The term is frequently used by database developers and database administrators.
+
+How can you group by a particular value in MongoDB?
+->We can group by single as well as multiple field from the collection, we can use $group operator in MongoDB to group fields from the collection and returns the new document as result. 
+We are using $avg, $sum, $max, $min, $push, $last, $first and $addToSet operator with group by in MongoDB.
+
+How can you paginate on MongoDB?
+->function printStudents(pageNumber, nPerPage) {
+   print("Page: " + pageNumber);
+   db.students.find().skip((pageNumber-1)*nPerPage).limit(nPerPage).forEach( function(student) { print(student.name + "<p>"); } );
+}
+
+How can you sort in MongoDB?
+->For sorting your MongoDB documents, you need to make use of the sort() method. This method will accept a document that has a list of fields and the order for sorting.
+ For indicating the sorting order, you have to set the value 1 or -1 with the specific entity based on which the ordering will be set and displayed. One indicates organizing data in ascending order while -1 
+indicates organizing in descending order.
+
+What is indexing in MongoDB? Why do we need to use indexing? What are pros and cons for indexing?
+->What is Indexing?
+What indexing does is sort our mongoDB collection in a particular order based on the value of one field(or more than one field). 
+Assume that I have a collection called customers and I have kept customerName as the field for indexing, 
+then what MongoDB does is that it’ll create a list of all the names in an alphabetical order in the document.
+
+The list will be just the names and each item in the list will contain a pointer to the real document in the collection. 
+What this does is the next time you run a find query with the customerName as the filter parameter, 
+Mongo will directly look into that list and easily and quickly find your required document(s).
+
+Pros and cons of indexing
+The biggest advantage of indexing is that it speeds up your find, update and delete queries. 
+Quite naturally because it is easier to search for the elements based on the indexed field.
+
+The disadvantages of indexing is that 1. It takes up memory (obviously). 2.It slows down write queries.
+
+Write the query for indexing a field in MongoDB?
+->MongoDB uses indexing in order to make the query processing more efficient. If there is no indexing, 
+then the MongoDB must scan every document in the collection and retrieve only those documents that match the query. 
+Indexes are special data structures that stores some information related to the documents such that it becomes easy for MongoDB to find the right data file.
+ The indexes are order by the value of the field specified in the index. 
+
+What is the improvement in performance in MongoDB?
+->Indexing in MongoDB is one of the most common methods for improving read performance—and in fact, 
+not only for MongoDB, but for any database, including relational ones.
+
+When you index a table or collection, the database creates another data structure. 

@@ -7,6 +7,10 @@ export default function App() {
   const [pageNo, setPageNo] = useState(1)
   const { datas, increase, loading} = GetBooks(q, pageNo)
 
+  
+  
+  
+  
   const customer = useRef()
   const last = useCallback(node => {
     if (loading) return
@@ -19,6 +23,13 @@ export default function App() {
     if (node) customer.current.observe(node)
   }, [loading, increase])
 
+  
+  
+  
+  
+  
+  
+  
   function mannageSearching(e) {
     setQ(e.target.value)
     setPageNo(1)

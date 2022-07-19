@@ -6,10 +6,20 @@ export default function GetBooks(query, pageNumber) {
   const [datas, setDatas] = useState([])
   const [increase, setIncrease] = useState(false)
 
+  
+  
+  
   useEffect(() => {
     setDatas([])
   }, [query])
 
+  
+  
+  
+  
+  
+  
+  
   useEffect(() => {
     setLoading(true)
     let cancel
